@@ -8,7 +8,7 @@ const navigation = ref([
 </script>
 <template>
   <div>
-    <h1 class="arroz">navbar</h1>
+    <h1 class="arroz">navbar2</h1>
     <div>
       <NuxtLink :to="item.to" v-for="item in navigation">{{
         item.name
