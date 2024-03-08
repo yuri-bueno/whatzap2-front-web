@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev --host --port 4000",
     "start": "npm run build && node --env-file .env  .output/server/index.mjs",
+    "teste": "npm run build && node --env-file .env  .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
