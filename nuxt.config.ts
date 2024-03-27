@@ -2,7 +2,13 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/image", "@pinia/nuxt", "nuxt-icon", "nuxt-socket-io", ,],
+  modules: [
+    "@nuxt/image",
+    "@pinia/nuxt",
+    "nuxt-icon",
+    "nuxt-socket-io",
+    "@nuxt/ui",
+  ],
   ssr: true,
   image: {
     format: ["webp"],
@@ -11,6 +17,7 @@ export default defineNuxtConfig({
   io: {
     sockets: [{ name: "main", url: process.env.DATABASE_URL }],
   },
+  ui: { icons: "all" },
   css: ["@/assets/scss/utils/global.scss"],
   runtimeConfig: {
     public: {
